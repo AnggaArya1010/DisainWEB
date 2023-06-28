@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kitefestifal">
+    <title>Bali Kite Festival</title>
+  <style>
+
+.header{
+    background: linear-gradient(#f08d8d15 , #ffffff), url("index.jpg") ;
+    background-size: cover ;
+    background-position: center;
+    height: 28vh;
+}
+
+.navbar{
+    padding-top: 40px;
+    overflow: hidden;
+    margin-top: 3px;
+    background-color: rgb(255, 255, 255);
+    height: 9vh;
+    position: sticky;
+}
+
+.navbar>ul{
+    display: flex;
+}
+
+.navbar>ul>a{
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    transition: ease-in-out .3s;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.navbar>ul>a>li{
+
+    list-style-type: none;
+    font-size: 2em;
+}
+
+.navbar>ul>a:hover{
+    font-size: 1.5em;
+    background-color: #36483D ;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: ease-in-out .4s;
+}
+
+.row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 20%;
+            background-color: rgb(247, 241, 241);
+            padding: 20px;
+        }
+
+        .main {
+            flex: 60%;
+            background-color: rgb(255, 254, 253);
+            width: 100%;
+        }
+
+        .main img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 900px;
+            background-position: center;
+        }
+
+        .main h2 {
+            text-align: center;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #acf297;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: aqua;
+        }
+        .form{
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            border: 1px gray solid;
+            padding: 20px 30px;
+            background-color: #c1bdbd;
+        }
+  </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="navbar">
+        <ul>
+            <a href="beranda.html"><li>Beranda</li></a>
+            <a href="RareAngon.html"> <li>Kriteria</li></a>
+            <a href=""> <li>Pendaftaran</li></a>
+            <a href="masukan.html" > <li class="active">Masukan&Saran</li></a>
+        </ul>
+    </div>
+    <div class="main">
+        <form action=""><br><br>
+          <div class="row">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama">
+          </div>
+          <br>
+          <div class="row">
+            <div class="inline-row">
+            <label for="jenis-kelamin">Jenis Kelamin <br></label>
+            <input type="radio" id="nama"  name="fav_language" value="lakilaki">
+            <label for="lakilaki">Laki-Laki</label><br>
+            <input type="radio" id="nama"  name="fav_language" value="perempuan">
+            <label for="perempuan">Perempuan</label><br>
+            </div>
+        </div>
+          <br>
+          <div class="row">
+            <label for="nama">Umur</label>
+            <input type="text" id="umur" name="umur">
+          </div>
+          <br>
+          <div class="row">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="@gmail.com">
+          </div>
+          <br>
+          <div class="row">
+            <label for="telp">Saran</label>
+            <input type="text" id="saran" name="saran"  > 
+        </div>
+
+          <div class="row">
+              <button class="button1" onclick="simpan()">Simpan</button>
+          </div>
+        </form>
+    </div>
+</div>
+<script>function simpan(){
+    var nama = document.getElementById('nama').value;
+    alert(nama);
+}
+
+</script>
+</body>
+</html>

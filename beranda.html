@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kitefestifal">
+    <title>Bali Kite Festival</title>
+<style>
+
+.header{
+    background-image: url("index.jpg");
+    background: linear-gradient(#f08d8d15 , #ffffff), url("index.jpg") ;
+    background-size: cover ;
+    background-position: center;
+    height: 28vh;
+}
+
+.navbar{
+    padding-top: 40px;
+    overflow: hidden;
+    margin-top: 3px;
+    background-color: rgb(255, 255, 255);
+    height: 9vh;
+    position: sticky;
+}
+
+.navbar>ul{
+    display: flex;
+}
+
+.navbar>ul>a{
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    transition: ease-in-out .3s;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.navbar>ul>a>li{
+    list-style-type: none;
+     font-size: 2em;
+}
+
+.navbar>ul>a:hover{
+    font-size: 1.5em;
+    background-color: #36483D ;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: ease-in-out .4s;
+}
+
+.active{
+    text-align: center;
+    background-color: #36483D;
+    color: #ffffff;
+    border-radius: 3px;
+    width: 10vw;
+}
+
+.side>h1{
+    margin-top: 70px;
+    margin-left: 10px;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    font-family: 'Kalam', cursive;
+}
+
+.imgmain>img{
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 18px;
+    width: 50vw;
+    height: 70vh;
+}
+
+.imgmain>p{
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 15vh;
+    font-size: 1.3em;
+}
+
+
+
+
+
+  
+</style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="navbar">
+        <ul>
+           <a href="beranda.html"><li class="active">Beranda</li></a>
+           <a href="RareAngon.html"> <li>Kriteria</li></a>
+           <a href=""> <li>Pendaftaran</li></a>
+           <a href="masukan.html"> <li>Masukan&Saran</li></a>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h1>RARE ANGON</h1>
+            <div class="imgmain">
+                <img class="mySlides" src="layangan1.jpg" alt="" >
+                <img class="mySlides" src="layangan2.webp" alt="">
+                <img class="mySlides" src="layangan3.webp" alt="">
+                <p>Rare Angon, Identik dengan Tradisi 'Melayangan' di Bali <br> Dalam cerita tersebut, dipercaya Rare Angon merupakan Dewa Layangan yang bermanifestasi dari Dewa Pelebur, Dewa Siwa. Rare Angon akan turun ke bumi ketika musim panen raya di sawah usai iringan dengan tiupan seruling khas yang menandakan memanggil sang angin.Selanjutnya, Rare Angon berarti anak gembala, setelah musim panen para petani terutama anak gembala mempunyai waktu senggang yang mereka gunakan untuk senang-senang. Sambil menjaga ternaknya salah satu permainan yang sering mereka lakukan adalah bermain Layang-layang.Pada saat ini, budaya Melayangan masih sering dilakukan oleh masyarakat Bali, tidak hanya bagi anak-anak, orang dewasa pun sangat gemar Melayangan. Hal ini terbukti dengan diadakannya berbagai kompetisi layang-layang yang banyak diikuti oleh ‘seka’ (grup) Banjar-banjar Desa Adat.Maka dari itu kami selaku panitia KITE FESTIVAL 2023 mengundang para Rare Angon Sebali untuk membantu memriahkan acara KITE FESTIVAL 2023.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
