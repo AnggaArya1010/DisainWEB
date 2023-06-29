@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Warisan Budaya Nusantara</title>
+    <meta name="description" content="Budaya-Budaya Yang Ada Di Bali">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .header {
+            background-image: url("header.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            padding: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .header h2 {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+        }
+
+        .header p {
+            color: #fcf9f9;
+            font-size: 15px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: sticky;
+            width: 100%;
+            background-color: gray;
+
+        }
+
+        .navbar h1 {
+            float: left;
+            margin-left: 20px;
+
+
+        }
+
+        .navbar a:hover {
+            color: blue;
+            background-color: white;
+        }
+
+        .navbar a.active {
+            color: blue;
+            background-color: white;
+        }
+
+        .navbar a {
+            color: rgb(255, 255, 249);
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 32px 20px;
+            text-decoration: none;
+            float: right;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 20%;
+            background-color: rgb(247, 241, 241);
+            padding: 20px;
+        }
+
+        .main {
+            flex: 60%;
+            background-color: rgb(255, 254, 253);
+            width: 100%;
+        }
+
+        .main img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 900px;
+            background-position: center;
+        }
+
+        .main h2 {
+            text-align: center;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #acf297;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: aqua;
+        }
+        .form{
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            border: 1px gray solid;
+            padding: 20px 30px;
+            background-color: #c1bdbd;
+        }
+        .
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 style="color: white;">Warisan Budaya</h1>
+        <a href="saran.html"  class="active">Masukan dan Saran</a>
+        <a href="WarisanBudaya.html">Warisan Budaya</a>
+        <a href="beranda.html">Beranda</a>
+    </div>
+    <div class="header">
+        <h1>Budaya-Budaya Yang Ada Di Pulau BALI</h1>
+        <h2 style="font-style:italic ;">BALI, INDONESIA</h2>
+        <p style="font-style:italic;color:">by. I Putu Angga Arya Wiguna</p>
+    </div>
+
+    <div class="main"><br><br>
+        <h2>Form Masukan dan Saran</h2>
+    </div><br><br>
+
+    <div class="main">
+        <form action="" class="form">
+            <div class="row">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </div><br>
+
+            <div class="row"><br>
+                <br>
+                <label for="jenis lelamin">jenis kelamin</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="jeniskelamin" value="laki-laki">Laki-Laki
+                <input type="radio" name="jeniskelamin" value="perempuan">Perempuan
+                <br>
+            </div><br>
+
+            <div class="row"><br>
+                <label for="umur">Umur</label>
+                <input type="text" id="umur" name="umur">
+            </div><br>
+
+            <div class="row"><br>
+                <label for="email">email</label>
+                <input type="text" id="email" name="email">
+            </div><br>
+
+            <div class="row"><br>
+                <label for="masukan saran">Masukan dan Saran</label>
+                <input type="text" id="kritik saran" name="kritik saran">
+            </div><br>
+
+            <div>
+                <button class="button button1" onclick="simpan()">Simpan</button>
+            </div><br>
+        </form>
+    </div>
+
+
+    <script>
+        function simpan() {
+            var nama = document.getElementById('nama').value;
+            alert("Berhasil Disimpan");
+
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+        }
+
+
+    </script>
+
+</body>
+
+</html>"
